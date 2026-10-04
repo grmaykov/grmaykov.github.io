@@ -22,12 +22,12 @@
 
 img[src="/assets/preview-02.webp"]{clip-path:inset(0 0 12.5% 0)}.frame:has(img[src="/assets/preview-02.webp"]),.player:has(img[src="/assets/preview-02.webp"]){background:#000}
 
-.frame:has(img[src="/assets/preview-00.webp"]),.player:has(img[src="/assets/preview-00.webp"]){background:#000}.frame img[src="/assets/preview-00.webp"],.player>img[src="/assets/preview-00.webp"]{object-fit:contain;object-position:center}.project:hover .frame img[src="/assets/preview-00.webp"]{transform:none}
+.frame:has(img[src="/assets/preview-00.webp"]),.player:has(img[src="/assets/preview-00.webp"]){background:#000}.frame img[src="/assets/preview-00.webp"],.player>img[src="/assets/preview-00.webp"]{object-fit:contain;object-position:center}
 /* YouTube previews include 45px black bars in a 480x360 image. Fit the
    original 480x270 picture to the shared 16:9 frame without distortion. */
 .frame:has(img[src="/assets/preview-09.webp"]),.frame:has(img[src="/assets/preview-10.webp"]){background:#000}
 .frame img[src="/assets/preview-09.webp"],.frame img[src="/assets/preview-10.webp"]{object-fit:cover;object-position:center}
-.project:hover .frame img[src="/assets/preview-09.webp"],.project:hover .frame img[src="/assets/preview-10.webp"]{transform:none}
+
 
 /* Inline playback keeps every card in its original grid position. */
 .preview-play{position:absolute;inset:0;width:100%;height:100%;display:grid;place-items:center;padding:0}
@@ -70,7 +70,7 @@ img[src="/assets/preview-02.webp"]{clip-path:inset(0 0 12.5% 0)}.frame:has(img[s
 
 .gear-original{display:block;width:100%;height:100%;object-fit:contain;max-width:100%}.gear-cameras .gear-original{max-width:260px}.gear-black-source{mix-blend-mode:lighten}.gear-gimbals .gear-original{max-width:290px}
 /* Toli: remove exterior matte while retaining the complete original picture. */
-.frame:has(img[src="/assets/video-064.webp"]),.player:has(img[src="/assets/video-064.webp"]){background:#000}.frame img[src="/assets/video-064.webp"],.player>img[src="/assets/video-064.webp"]{object-fit:cover;object-position:center}.project:hover .frame img[src="/assets/video-064.webp"]{transform:none}
+.frame:has(img[src="/assets/video-064.webp"]),.player:has(img[src="/assets/video-064.webp"]){background:#000}.frame img[src="/assets/video-064.webp"],.player>img[src="/assets/video-064.webp"]{object-fit:cover;object-position:center}
 /* Constrain portrait photos to the carousel, independent of intrinsic image height. */
 .photo-full .photo-slides{grid-template-rows:minmax(0,1fr)}.photo-full .photo-slide{min-height:0;max-height:100%;overflow:hidden}.photo-full .photo-slide img{width:auto;height:auto;max-width:100%;max-height:100%;min-width:0;min-height:0;object-fit:contain;flex:0 1 auto}
 
