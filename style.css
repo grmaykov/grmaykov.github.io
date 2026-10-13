@@ -85,3 +85,11 @@ img[src="/assets/preview-02.webp"]{clip-path:inset(0 0 12.5% 0)}.frame:has(img[s
 .photo-full .photo-left img,.photo-full .photo-right img{height:72%;width:auto;max-width:none;max-height:100%;flex:none}
 .photo-full .photo-controls{margin-top:12px}
 }
+
+/* Keep equipment labels centered and close to their images. */
+.gear-card{text-align:center}
+.gear-image-area{padding:16px 24px 0;align-items:flex-end}
+.gear-original{object-position:center bottom}
+.gear-card h3{margin:14px 0 6px;line-height:1.35}
+.gear-card p{margin:0 auto;max-width:100%;text-align:center}
+@media(max-width:750px){.gear-image-area{padding:16px 20px 0}}
