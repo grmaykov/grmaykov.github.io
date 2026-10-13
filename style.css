@@ -93,3 +93,11 @@ img[src="/assets/preview-02.webp"]{clip-path:inset(0 0 12.5% 0)}.frame:has(img[s
 .gear-card h3{margin:14px 0 6px;line-height:1.35}
 .gear-card p{margin:0 auto;max-width:100%;text-align:center}
 @media(max-width:750px){.gear-image-area{padding:16px 20px 0}}
+
+/* Seven lens sets: three across, then four including Kinoptik. */
+@media(min-width:1001px){
+  .gear-lenses{grid-template-columns:repeat(12,minmax(0,1fr))}
+  .gear-lenses .gear-card{grid-column:span 4}
+  .gear-lenses .gear-card:nth-child(n+4){grid-column:span 3}
+  .gear-lenses .gear-card:nth-child(n+4) .gear-image-area{padding-left:12px;padding-right:12px}
+}
